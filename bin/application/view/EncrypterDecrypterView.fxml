@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.EncrypterDecrypterController">
+   <children>
+      <Pane prefHeight="250.0" prefWidth="400.0">
+         <children>
+            <TextField fx:id="txFl" layoutX="14.0" layoutY="41.0" prefHeight="31.0" prefWidth="369.0" />
+            <Label layoutX="14.0" layoutY="14.0" text="Message Input" />
+            <Button layoutX="14.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleEncrpytButton" text="Encrypt" />
+            <Button layoutX="311.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleDecrpytButton" text="Decrypt" />
+            <Label layoutX="14.0" layoutY="150.0" text="Message Output" />
+            <Label fx:id="output" layoutX="14.0" layoutY="171.0" prefHeight="31.0" prefWidth="369.0" text="-output-" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
